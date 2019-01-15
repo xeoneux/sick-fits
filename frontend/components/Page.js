@@ -9,7 +9,7 @@ const MyButton = styled.button`
   background: red;
 
   span {
-    font-size: 100px;
+    font-size: ${({ huge }) => (huge ? 100 : 50)}px;
   }
 `;
 
@@ -19,7 +19,7 @@ class Page extends React.Component {
       <div>
         <Meta />
         <Header />
-        <MyButton>
+        <MyButton huge>
           Click Me
           <span>💩</span>
         </MyButton>
