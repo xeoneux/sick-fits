@@ -5,8 +5,12 @@ import Meta from './Meta';
 import Header from './Header';
 
 const MyButton = styled.button`
+  font-size: 50px;
   background: red;
-  font-size: 100px;
+
+  span {
+    font-size: 100px;
+  }
 `;
 
 class Page extends React.Component {
@@ -15,7 +19,10 @@ class Page extends React.Component {
       <div>
         <Meta />
         <Header />
-        <MyButton>Click Me</MyButton>
+        <MyButton>
+          Click Me
+          <span>💩</span>
+        </MyButton>
         {this.props.children}
       </div>
     );
