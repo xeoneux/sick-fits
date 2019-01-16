@@ -17,6 +17,11 @@ const Logo = styled.h1`
     text-transform: uppercase;
     background: ${({ theme }) => theme.red};
   }
+
+  @media (max-width: 1300px) {
+    margin: 0;
+    text-align: center;
+  }
 `;
 
 const Header = () => (
