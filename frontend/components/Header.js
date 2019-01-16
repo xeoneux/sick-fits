@@ -1,9 +1,15 @@
+import Link from 'next/link';
+
 import Nav from './Nav';
 
 const Header = () => (
   <div>
     <div className="bar">
-      <a href="">Sick Fits</a>
+      <h1>
+        <Link href="/">
+          <a>Sick Fits</a>
+        </Link>
+      </h1>
       <Nav />
     </div>
     <div className="sub-bar">
