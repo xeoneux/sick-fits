@@ -37,6 +37,12 @@ const StyledHeader = styled.header`
       grid-template-columns: 1fr;
     }
   }
+
+  .sub-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 1px solid ${({ theme }) => theme.lightgrey};
+  }
 `;
 
 const Header = () => (
