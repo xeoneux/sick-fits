@@ -15,6 +15,13 @@ const theme = {
 };
 
 injectGlobal`
+  @font-face {
+    font-size: normal;
+    font-weight: normal;
+    font-family: 'radnika_next';
+    src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');
+  }
+
   html {
     font-size: 10px;
     box-sizing: border-box;
@@ -25,12 +32,18 @@ injectGlobal`
     padding: 0;
     line-height: 2;
     font-size: 1.5rem;
+    font-family: 'radnika_next';
   }
 
   *,
   *:after,
   *:before {
     box-sizing: inherit;
+  }
+
+  a {
+    color: ${theme.black};
+    text-decoration: none;
   }
 `;
 
