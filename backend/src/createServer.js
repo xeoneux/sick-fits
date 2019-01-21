@@ -7,8 +7,8 @@ const Mutation = require('./resolvers/Mutations');
 function createServer() {
   return new GraphQLServer({
     typeDefs: 'src/schema.graphql',
-    context: req => ({ ...req, db }),
     resolvers: { Query, Mutation },
+    context: req => ({ ...req, db }),
     resolverValidationOptions: { requireResolversForResolveType: false },
   });
 }
