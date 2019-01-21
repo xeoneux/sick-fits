@@ -2,7 +2,7 @@ require('dotenv').config({ path: 'variables.env' });
 
 const createServer = require('./createServer');
 
-createServer().server.start(
+createServer().start(
   {
     cors: {
       credentials: true,
