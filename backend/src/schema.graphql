@@ -6,10 +6,10 @@ type Query {
 
 type Mutation {
   createItem(
-    title: String
-    description: String
     price: Int
+    title: String
     image: String
     largeImage: String
+    description: String
   ): Item!
 }
